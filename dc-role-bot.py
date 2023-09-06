@@ -28,7 +28,8 @@ async def create_turtle(ctx):
                         🪨 Erde
                          💨 Luft 
                          
-                         Das Element, dass du wählst, wird dir helfen dich auf dem Server zurecht zu finden""", 
+                         Das Element, das du wählst, wird dir helfen, dich auf dem Server zurechtzufinden!
+                         @everyone""", 
                         color=0x91FF00)
 
     embed.set_thumbnail(url="https://media.tenor.com/aojw6qKlgnkAAAAC/atla-avatar.gif")
