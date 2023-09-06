@@ -5,13 +5,20 @@ This is a simple discord role selection bot in the theme of a lion turtle, from 
 
 ## Find a Lion Turtle myself (hosting your own)
 ### Podman (Docker)
-1. Make sure you have podman or docker installed
+1. Make sure you have *podman* or *docker* installed
 2. Clone or download and unzip the repository
-3. Create a file called `config.json` and enter `{ "token": "<my-token>"}` (make sure to replace `<my-token>` with your discord bot token)
+3. Create a file called `config.json` in the projects root folder and enter `{ "token": "<my-token>"}` (make sure to replace `<my-token>` with your discord bot token)
 4. Run `docker build -t lion-bot .`
 5. Run `docker run -d --name lion-bot-container lion-bot`
 
-## Invite an existing Lion Turtle (using an already hosted instance)
-If you don't want to find a lion turtle, willing to help your guild, you can use our lion turtle!
-Just open [this](todo) link to invite the lion turtle to your guild.  
-Keep in mind, that our lion turtle might not always be wanting to help you (we don't guarantee accessability/uptime).
+### Manual
+1. Make sure you have *python3* and *pip* installed
+2. Clone or download and unzip the repository
+3. Create a file called `config.json` in the projects root folder and enter `{ "token": "<my-token>"}` (make sure to replace `<my-token>` with your discord bot token)
+4. Run `python3 -m pip install -U discord.py` (you maybe want to run it in a virtial enviroment)
+5. Run `python3 main.py`
+
+# Usage
+1. Invite the bot to your server.
+2. Run `/spawnTurtle`
+3. Select your desired role
