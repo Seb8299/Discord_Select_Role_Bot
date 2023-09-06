@@ -5,10 +5,10 @@ from discord.ext import commands
 message = None
 
 # elements role ids
-water_id = 1148933891701346374
-earth_id = 1148941443247902810
-fire_id  = 1148933929672380517
-air_id   = 1148941410062573578
+water_id = 1148728509926211614
+earth_id = 1148728239578157116
+fire_id  = 1148728291893727282
+air_id   = 1148728453605097532
 
 client = commands.Bot(command_prefix='/')
 
