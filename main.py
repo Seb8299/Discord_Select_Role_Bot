@@ -10,7 +10,13 @@ earth_id = 1148728239578157116
 fire_id  = 1148728291893727282
 air_id   = 1148728453605097532
 
-client = commands.Bot(command_prefix='/')
+intents = discord.Intents.default()
+intents.guilds = True
+intents.messages = True
+intents.reactions = True
+# intents.message_content = True
+
+client = commands.Bot(command_prefix='/', intents=intents)
 
 @client.event
 async def on_ready():
