@@ -4,11 +4,12 @@
 This is a simple discord role selection bot in the theme of a lion turtle, from the show Avatar: The Last Airbender, gifting users with an element (a customizable discord role).
 
 ## Find a Lion Turtle myself (hosting your own)
-1. Add your token to the `config.json` file
-2. Add role ids in `dc-role-bot.py`
-3. Start the bot
-4. Type `/spawnTurtle`
-5. React to an Element
+### Podman (Docker)
+1. Make sure you have podman or docker installed
+2. Clone or download and unzip the repository
+3. Create a file called `config.json` and enter `{ "token": "<my-token>"}` (make sure to replace `<my-token>` with your discord bot token)
+4. Run `docker build -t lion-bot .`
+5. Run `docker run -d --name lion-bot-container lion-bot`
 
 ## Invite an existing Lion Turtle (using an already hosted instance)
 If you don't want to find a lion turtle, willing to help your guild, you can use our lion turtle!
