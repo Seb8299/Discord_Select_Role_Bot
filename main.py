@@ -40,6 +40,7 @@ async def create_turtle(ctx):
                          💨 Luft 
                          
                          Das Element, das du wählst, wird dir helfen, dich auf dem Server zurechtzufinden!
+                         @everyone
                          """, 
                         color=0x91FF00)
 
