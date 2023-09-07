@@ -10,6 +10,11 @@ earth_id = 1148728239578157116
 fire_id  = 1148728291893727282
 air_id   = 1148728453605097532
 
+# water_id = 1148933891701346374
+# earth_id = 1148941443247902810
+# fire_id  = 1148933929672380517
+# air_id   = 1148941410062573578
+
 intents = discord.Intents.default()
 intents.guilds = True
 intents.messages = True
@@ -35,7 +40,7 @@ async def create_turtle(ctx):
                          💨 Luft 
                          
                          Das Element, das du wählst, wird dir helfen, dich auf dem Server zurechtzufinden!
-                         @everyone""", 
+                         """, 
                         color=0x91FF00)
 
     embed.set_thumbnail(url="https://media.tenor.com/aojw6qKlgnkAAAAC/atla-avatar.gif")
