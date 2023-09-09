@@ -1,3 +1,4 @@
+from asyncio import sleep
 import json
 import discord
 from discord.ext import commands
@@ -163,7 +164,15 @@ async def on_reaction_add(reaction, user):
 
 
 # handle discord token
+
 config_file = open("config.json", "r").read()
 config = json.loads(config_file)
 token = config["token"]
-client.run(token)
+while True:
+    try:
+
+        client = commands.Bot(command_prefix='/', intents=intents)                
+        client.run(token)
+    except Exception as e:
+        print(f'Restarting in 10s\nError: {e}')
+        sleep(10)
