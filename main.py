@@ -170,9 +170,10 @@ config = json.loads(config_file)
 token = config["token"]
 while True:
     try:
-
+        print("try to start client")
         client = commands.Bot(command_prefix='/', intents=intents)                
         client.run(token)
+        print("client start finished")
     except Exception as e:
         print(f'Restarting in 10s\nError: {e}')
         sleep(10)
