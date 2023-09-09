@@ -15,7 +15,7 @@ air_id   = 1148728453605097532
 # fire_id  = 1148933929672380517
 # air_id   = 1148941410062573578
 
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.guilds = True
 intents.messages = True
 intents.reactions = True
