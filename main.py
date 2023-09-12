@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 
 message = None
+client = None
 
 # elements role ids
 water_id = 1148728509926211614

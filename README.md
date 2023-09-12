@@ -9,7 +9,9 @@ This is a simple discord role selection bot in the theme of a lion turtle, from 
 2. Clone or download and unzip the repository
 3. Create a file called `config.json` in the projects root folder and enter `{ "token": "<my-token>"}` (make sure to replace `<my-token>` with your discord bot token)
 4. Run `podman build -t lion-bot .`
-5. Run `podman run -d --name lion-bot-container lion-bot`
+5. Run `podman stop lion-bot`
+6. Run `podman rm lion-bot`
+7. Run `podman run -d --name lion-bot-container -it lion-bot`
 
 ### Manual
 1. Make sure you have *python3* and *pip* installed
